@@ -1,6 +1,7 @@
 # Code Challenge: JavaScript Fluency
 
 ## Instructions
+
 1. Clone down this assignment to your local environment.
 2. Code your solution using JavaScript in `index.js`.
 3. **Be sure to run and test your code throughly!**
@@ -49,27 +50,39 @@ const users = [
 
 ```
 
-1. Write a function, `getAllTags`, that returns an array of strings that contain the `name` and `username` property for each user. 
+1. Write a function names `logAllNames` that logs all the names of each user to the console.
+    
+    ```jsx
+    logAllNames(users) 
+    /* Will log each name to the console
+    Reuben
+    Laisha
+    Anne
+    Steph
+    Carmen
+    */ 
+    ```
+    
+2. Write a function, `getAllTags`, that will log strings that contain the `name` and `username` property for each user to the console.
     
     ```jsx
     getAllTags(users)
-    //returns this array of strings
-    [
+    /* These strings will be printed to the console
       'Hi my name is Reuben, and my tag is @blood_pressure_killa!',
       'Hi my name is Laisha, and my tag is @passaic_papi!',
       'Hi my name is Anne, and my tag is @i_love_bambas!',
       'Hi my name is Steph, and my tag is @queen_of_the_kew!',
       'Hi my name is Carmen, and my tag is @omar_apollo_fanclub!'
-    ]
+    */
     ```
     
-2. Write a function, `countAllUsers` that returns a count of elements of the given `users` array. 
+3. Write a function, `sumAllFollowers` that returns a sum of the number of followers each user has. 
     
     ```jsx
-    countAllUsers(users) //returns 5
+    sumAllFollowers(users) //returns 1201913
     ```
     
-3. Write a function, `searchUsername`, that takes a string along with the array of objects and returns the user object whose `username` matches the string parameter.
+4. Write a function, `searchUsername`, that takes a string along with the array of objects and returns the user object whose `username` matches the string parameter.
     
     ```jsx
     searchUsername(users, "@passaic_papi")
@@ -85,7 +98,7 @@ const users = [
     ]
     ```
     
-4. Who is most long-winded? Return the object with the longest bio.
+5. Who is most long-winded? Return the object with the longest bio.
     
     ```jsx
     longWinded(users)
@@ -101,7 +114,7 @@ const users = [
     ]
     ```
     
-5. Return an array sorted by `follower` count, least to greatest.
+6. Return an array sorted by `follower` count, least to greatest.
     
     ```jsx
     follower(users)
